@@ -1,0 +1,40 @@
+.header {
+ background-color: rgb(202, 202, 202);
+}
+
+ul.hr {
+	margin: 0;
+	padding: 4px; 
+}
+
+ul.hr li {
+	font-size: 14px;
+	color: whitesmoke;
+	display: inline;
+	margin-right: 5px; 
+	border: 1px solid rgb(33, 134, 200); 
+	padding: 3px;
+}
+
+.mainPage{
+	margin: 20px;
+	padding: 20px;
+	font-size: 50px; 
+	font-family:"Segoe Print";
+	text-align: center;
+	border: 5px solid orange;
+	border-radius: 30%;
+}
+
+.formBlog{
+	font-family:"Segoe Print";
+	float: right; 
+	color: orange; 
+	border-style: solid; 
+	border-color: rgb(100, 100, 100); 
+	width: 35px; 
+	height: 35px; 
+	text-align: center; 
+	background-color: rgb(100, 100, 100);
+}
+ 

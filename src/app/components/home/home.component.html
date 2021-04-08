@@ -1,0 +1,16 @@
+<div class="container">
+
+	<h1 [ngClass]="{mainPage:true}">Welcome to My homepage</h1>
+		<form>
+			<div style="padding: 20px 0px;" *ngFor="let blog of blogs">
+			<div class="card">
+				<div fontStyle style="font-weight: bold;" class="card-header">
+				{{ blog.title }}
+				</div>
+				<div class="card-body">
+				<p fontStyle class="card-text">{{ blog.content }}</p>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

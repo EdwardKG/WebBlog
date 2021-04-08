@@ -1,0 +1,20 @@
+<div class="container">
+	<header class="jumbotron">
+	  <p>{{ content }}</p>
+	</header>
+	<h1 [ngClass]="{mainPage:true}">Welcome to My homepage</h1>
+		<form>
+			<div style="padding: 20px 0px;" *ngFor="let blog of blogs">
+			<div class="card">
+				<div fontStyle style="font-weight: bold;" class="card-header">
+				{{ blog.title }}
+				<span  [ngClass]="{formBlog:true}" 
+				(click)="removeBlog(blog)">X</span>
+				</div>
+				<div class="card-body">
+				<p fontStyle class="card-text">{{ blog.content }}</p>
+				</div>
+			</div>
+		</div>
+	</form>
+ </div>
