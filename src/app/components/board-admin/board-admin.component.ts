@@ -22,6 +22,7 @@ export class BoardAdminComponent implements OnInit {
         this.content = JSON.parse(err.error).message;
       }
     );
+	 this.blogs = JSON.parse(localStorage.getItem("blogs"));
   }
   
   removeBlog(blog) {

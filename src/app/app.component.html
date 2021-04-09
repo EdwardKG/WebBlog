@@ -7,30 +7,28 @@
 		 <li class="nav-item">
 			<a href="/home" class="nav-link" routerLink="home">Home</a>
 		 </li>
-		 <li class="nav-item" *ngIf="showAdminBoard">
+		 <li class="nav-item">
 			<a href="/admin" class="nav-link" routerLink="admin">Admin Board</a>
 		 </li>
-	  </ul>
 
-	  <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
-		<li class="nav-item">
-			<a href="/login" class="nav-link" routerLink="register">Sign Up</a>
+		 <li class="nav-item">
+			<a href="/register" class="nav-link" routerLink="register">Sign Up</a>
 		</li>
 		<li class="nav-item">
-			<a href="/register" class="nav-link" routerLink="login">Sign In</a>
+			<a href="/login" class="nav-link" routerLink="login">Sign In</a>
 		</li>
-	  </ul>
 
-	  <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
 		<li class="nav-item">
-			<a href="/blog" class="nav-link" *ngIf="isLoggedIn || showAdminBoard" routerLink="blog">Post</a>
+			<a href="/blog" class="nav-link" routerLink="blog">Post</a>
 		</li>
+		
 		<li class="nav-item">
 			<a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
-		 </li>
-		 <li class="nav-item">
+		</li>
+		
+		<li class="nav-item">
 			<a href class="nav-link" (click)="logout()">LogOut</a>
-		 </li>
+		</li>
 	  </ul>
 	</div>
  </nav>
